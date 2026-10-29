@@ -21,22 +21,9 @@ remotes::install_github("TKMarkCheng/NormaliseForIC50",dependencies = TRUE, forc
     ## Downloading GitHub repo TKMarkCheng/NormaliseForIC50@HEAD
 
 ``` bg-output
-## RcppArmad... (NA -> 15.6.2-1 ) [CRAN]
-## RcppEigen    (NA -> 0.3.4.0.2) [CRAN]
-## cpp11        (NA -> 0.5.5    ) [CRAN]
-## prettyunits  (NA -> 1.2.0    ) [CRAN]
-## hms          (NA -> 1.1.4    ) [CRAN]
-## progress     (NA -> 1.2.3    ) [CRAN]
-```
-
-    ## Installing 6 packages: RcppArmadillo, RcppEigen, cpp11, prettyunits, hms, progress
-
-    ## Installing packages into '/home/runner/work/_temp/Library'
-    ## (as 'lib' is unspecified)
-
-``` bg-output
+## 
 ## ── R CMD build ─────────────────────────────────────────────────────────────────
-## * checking for file ‘/tmp/RtmpvKb6r0/remotes1ade480e1545/TKMarkCheng-NormaliseForIC50-f54d19a/DESCRIPTION’ ... OK
+## * checking for file ‘/tmp/RtmphGF7cf/remotes19aa1846548b/TKMarkCheng-NormaliseForIC50-f54d19a/DESCRIPTION’ ... OK
 ## * preparing ‘NormaliseForIC50’:
 ## * checking DESCRIPTION meta-information ... OK
 ## * checking for LF line-endings in source and make files and shell scripts

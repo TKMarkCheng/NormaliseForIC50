@@ -9,12 +9,6 @@ if(!require("remotes"))install.packages("remotes",repos="http://cran.us.r-projec
 
     ## Loading required package: remotes
 
-    ## Warning in library(package, lib.loc = lib.loc, character.only = TRUE,
-    ## logical.return = TRUE, : there is no package called 'remotes'
-
-    ## Installing package into '/home/runner/work/_temp/Library'
-    ## (as 'lib' is unspecified)
-
 ``` r
 
 if(!require("NormaliseForIC50"))remotes::install_github("TKMarkCheng/NormaliseForIC50",dependencies = TRUE, force = TRUE)
