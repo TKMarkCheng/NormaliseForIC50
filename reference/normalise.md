@@ -1,0 +1,59 @@
+# Reads in dataframe of Promega data, and normalise.
+
+This function assumes that the left most row is cell/negative control,
+and second column from the left as virus/positive control.
+
+## Usage
+
+``` r
+normalise(
+  df,
+  control_neg_column = c(1),
+  control_pos_column = c(2),
+  control_plating = "column",
+  control_neg_wells = c("A1", "B1", "C1", "D1", "E1", "F1", "G1", "H1"),
+  control_pos_wells = c("A2", "B2", "C2", "D2", "E2", "F2", "G2", "H2"),
+  cluster = FALSE,
+  filename = ""
+)
+```
+
+## Arguments
+
+- df:
+
+  dataframe to normalise, where left most column is negative control,
+  and second left column is positive control.
+
+- control_neg_column:
+
+  The column(s) which negative/cell control are located (column number
+  from left, integer)
+
+- control_pos_column:
+
+  The column(s) which positive/virus control are located (column number
+  from left, integer)
+
+- control_plating:
+
+  how the controls are plated. default = "column", set to "custom" to
+  input by wells using control_neg_wells and control_pos_wells.
+
+- control_neg_wells:
+
+  The wells which negative control are located (custom mode)
+
+- control_pos_wells:
+
+  The wells which positive control are located (custom mode)
+
+- cluster:
+
+  Experimental feature - uses k-means clustering to detect and exclude
+  anomalies in negative and positive control (default = FALSE)
+
+## Value
+
+A normalised dataframe where negative and positive control columns are
+removed.

@@ -1,0 +1,56 @@
+# Strings all functions together.
+
+Strings all functions together.
+
+## Usage
+
+``` r
+final_func(
+  neut_xlsx_path,
+  control_neg_column = c(1),
+  control_pos_column = c(2),
+  control_plating = "column",
+  control_neg_wells = c("A1", "B1", "C1", "D1", "E1", "F1", "G1", "H1"),
+  control_pos_wells = c("A2", "B2", "C2", "D2", "E2", "F2", "G2", "H2"),
+  sheetname = "Results",
+  rotation_deg_needed = 0,
+  cluster = FALSE
+)
+```
+
+## Arguments
+
+- neut_xlsx_path:
+
+  a file to normalise, where by default negative control is left most
+  column, and positive control is second left column.
+
+- control_neg_column:
+
+  The column which negative/cell control are located (column number from
+  left, integer,default=1)
+
+- control_pos_column:
+
+  The column which positive/cell control are located (column number from
+  left, integer,default=2)
+
+- sheetname:
+
+  the sheet of the .xlsx file to read, default for promega excel file is
+  "Results"
+
+- rotation_deg_needed:
+
+  degrees that dataframe needs to be rotated, default=0. Feeds into
+  rotate.R
+
+- cluster:
+
+  if the k-clusters dependent anomaly detection is invoked,
+  default=FALSE. Feed into normalise.R
+
+## Value
+
+A rotated, normalised dataframe where negative and positive control
+columns are removed.
